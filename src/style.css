@@ -1,0 +1,145 @@
+html{
+    background: linear-gradient(-45deg,#20002C,#CBB4D4);
+}
+
+
+body{
+    background:  linear-gradient(to right, #ECFEAA,#E2DE84) ;/* rgb(129, 81, 184); */
+    padding: 1rem;
+    margin:0 auto;
+    width:90%;
+    min-height: 100vh;
+    color: #5d5d6b;
+    border-radius: 2rem;
+}
+
+.title, .sub-title, .remark{
+    text-align:center;
+    font-size: 2.6rem;
+    margin: 0.5rem;
+    letter-spacing: 1px;
+    color: #626267;
+}
+
+.sub-title{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+  .remark{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+form{
+    text-align: center;
+  } 
+
+  .search{
+    background-color: rgb(147, 72, 221);
+    color: whitesmoke;
+    margin-left: .4rem;
+    font-size: 1.4rem;
+    padding: .6rem;
+    border-radius: .6rem;
+    border: 3px solid #5c5c3f;
+    outline:none;
+    transition: background-color 0.3s ;
+  }
+  .search:hover{
+    background-color: rgb(221, 72, 209);
+  }
+
+  input[type="text"]{
+    background: rgb(255, 255, 255);
+    outline:none;
+    margin:1rem 0;
+    width: 80%;
+    padding: 0.6rem;
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: 5px solid #A6A670;
+    border-radius: 1.2rem;
+  }
+
+  section{
+      margin:1rem auto;
+  }
+
+  #Recipe-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .recipe{
+      text-align:center;
+      background-color: rgb(252, 252, 252);
+      max-width:60%;
+      border: 4px solid  #A6A670;
+      padding: 1rem 10px;
+      border-radius: 10px;
+      margin: 5px auto;
+      box-shadow: 0 5px 10px #86836D;
+  }
+
+  .image{
+      background-size: contain;
+     min-height: 150px;
+      max-width: 80%;
+      border-radius: 5px;
+  }
+
+  .recipe-title{
+      font-size: 1.5rem;
+      margin: 10px auto;
+      letter-spacing: 1px;
+  }
+
+  .recipe-info{
+      font-size: 1.2rem;
+      margin: 10px auto;
+      letter-spacing: .4px;
+  }
+
+  li{
+      text-align: left;
+  }
+
+
+@media screen and (min-width: 800px) {
+    body {
+      width: 70%;
+      border-radius: 1rem;
+      margin:1rem auto;
+    }
+  
+    input[type='number'] {
+      width: 40%;
+    }
+
+    #Recipe-container{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .recipe{
+        width:40%;
+        padding: 2rem 0.5em;
+        border-radius: 10px;
+        margin: 1.4rem 1rem;
+    }
+
+    .recipe-info{
+        width:90%;
+    }
+    .search{
+        font-size: 1.2rem;
+        padding: .6rem;
+    }
+  }
+  
